@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="your-logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </div>
+    </nav>
+
+    <!-- Two Column Section -->
+    <section class="two-column-section">
+        <!-- Left Column with Product Image and Thumbnails -->
+        <div class="left-column">
+            <img id="main-image" src="http://placekitten.com/400/400" alt="Main Product">
+            <div class="thumbnail-container">
+                <div class="thumbnail" onclick="changeImage('http://placekitten.com/200/202')">
+                    <img src="http://placekitten.com/200/202" alt="Thumbnail 1">
+                </div>
+                <div class="thumbnail" onclick="changeImage('thumbnail2.jpg')">
+                    <img src="thumbnail2.jpg" alt="Thumbnail 2">
+                </div>
+                <div class="thumbnail" onclick="changeImage('thumbnail3.jpg')">
+                    <img src="thumbnail3.jpg" alt="Thumbnail 3">
+                </div>
+                <div class="thumbnail" onclick="changeImage('thumbnail4.jpg')">
+                    <img src="thumbnail4.jpg" alt="Thumbnail 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column with Heading and Dropdown Menu -->
+        <div class="right-column">
+            <h1>Fall Collection</h1>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">Gandolphs Quest</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                    <a href="#">Link 5</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+      <div class="footer-column">
+          <p>&copy; 2023 Your Company. All rights reserved.</p>
+      </div>
+      <div class="footer-column">
+          <a href="mailto:your@email.com"><img src="email-icon.png" alt="Email"></a>
+          <a href="https://www.facebook.com/yourpage" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="https://www.pinterest.com/yourpage" target="_blank"><img src="pinterest-icon.png" alt="Pinterest"></a>
+          <a href="https://www.instagram.com/yourpage" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+      </div>
+  </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
